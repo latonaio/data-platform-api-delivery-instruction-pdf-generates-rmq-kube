@@ -1,0 +1,62 @@
+{
+	"connection_key": "request",
+	"result": true,
+	"redis_key": "abcdefg",
+	"filepath": "/var/lib/aion/Data/rededge_sdc/abcdef.json",
+	"api_status_code": 200,
+	"runtime_session_id": "boi9ar543dg91ipdnspi099u231280ab0v8af0ew",
+	"business_partner": 201,
+	"service_label": "FUNC_DELIVERY_INSTRUCTION_PDF",
+	"api_type": "generates",
+	"DeliveryDocumentHeaderWithItem": [
+		{
+			"DeliveryDocument": 1,
+			"DeliveryDocumentDate": "2024-01-25",
+			"DeliverToParty": 101,
+			"DeliverToPartyName": "TEST鋼材株式会社",
+			"DeliverFromParty": 201,
+			"DeliverFromPartyName": "TEST商事株式会社",
+			"IsExportImport": false,
+			"OrderID": 1,
+			"OrderItem": 1,
+			"PlannedGoodsIssueDate": "2024-01-24",
+			"PlannedGoodsIssueTime": "22:00:00",
+			"PlannedGoodsReceiptDate": "2024-01-25",
+			"PlannedGoodsReceiptTime": "08:00:00",
+			"HeaderGrossWeight": 3390,
+			"HeaderNetWeight": 3390,
+			"HeaderWeightUnit": "KG",
+			"Incoterms": "CIF"
+		}
+	],
+	"DeliveryDocumentItem": [
+		{
+			"DeliveryDocument": 1,
+			"DeliveryDocumentItem": 1,
+			"DeliveryDocumentItemCategory": "INVP",
+			"Product": "SM570TMC-001",
+			"ProductSpecification": "SM570TMC",
+			"SizeOrDimensionText": "11.00 X 2000.0 X 6000.0",
+			"DeliveryDocumentItemText": "SM570TMC-001",
+			"DeliveryDocumentItemTextByBuyer": "SM570TMC-001",
+			"DeliveryDocumentItemTextBySeller": "SM570TMC-001",
+			"PlannedGoodsIssueQuantity": 1,
+			"PlannedGoodsIssueQtyInBaseUnit": 1036,
+			"BaseUnit": "KG",
+			"DeliveryUnit": "員数",
+			"PlannedGoodsIssueDate": "2024-01-24",
+			"PlannedGoodsIssueTime": "22:00:00",
+			"PlannedGoodsReceiptDate": "2024-01-25",
+			"PlannedGoodsReceiptTime": "08:00:00",
+			"ItemGrossWeight": 1036,
+			"ItemNetWeight": 1036,
+			"ItemWeightUnit": "KG",
+			"Project": 1,
+			"WBSElement": 1
+		}
+	],
+	"api_schema": "DPFMFuncDeliveryInstructionPDFGenerates",
+	"accepter": [
+		"DeliveryInstruction"
+	]
+}
