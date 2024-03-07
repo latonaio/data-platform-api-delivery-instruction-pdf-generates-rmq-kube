@@ -51,7 +51,7 @@ spec:
             claimName: data-platform-api-delivery-instruction-pdf-generates-rmq-kube-pv-claim
         - name: doc-storage
           hostPath:
-            path: /mnt/data-platform-api-delivery-instruction-pdf-generates-rmq-kube/order-pdf
+            path: /mnt/data-platform-api-delivery-instruction-pdf-generates-rmq-kube/delivery-instruction-pdf
         - name: material-storage
           hostPath:
             path: /mnt/data-platform-api-delivery-instruction-pdf-generates-rmq-kube/material
@@ -99,4 +99,4 @@ spec:
     - name: data-platform-api-delivery-instruction-pdf-generates-rmq-kube
       port: 3000
       protocol: TCP
-      nodePort: 30626
+      nodePort: 30670
