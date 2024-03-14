@@ -8,17 +8,28 @@
 	"business_partner": 201,
 	"service_label": "FUNC_DELIVERY_INSTRUCTION_PDF",
 	"api_type": "generates",
-	"DeliveryDocumentHeaderWithItem": [
+	"HeaderWithItem": [
 		{
 			"DeliveryDocument": 1,
 			"DeliveryDocumentDate": "2024-01-25",
 			"DeliverToParty": 101,
 			"DeliverToPartyName": "TEST鋼材株式会社",
+			"DeliverToPlant": "TE01",
+			"DeliverToPlantName": "TEST鋼材 川崎工場",
 			"DeliverFromParty": 201,
 			"DeliverFromPartyName": "TEST商事株式会社",
+			"DeliverFromPlant": "TE01",
+			"DeliverFromPlantName": "TEST商事 東京倉庫",
 			"IsExportImport": false,
 			"OrderID": 1,
 			"OrderItem": 1,
+			"Contract": 1,
+			"ContractItem": 1,
+			"Project": 1,
+			"WBSElement": 999,
+			"WBSElementDescription": "Test",
+			"ProductionOrder": 44,
+			"ProductionOrderItem": 1,
 			"PlannedGoodsIssueDate": "2024-01-24",
 			"PlannedGoodsIssueTime": "22:00:00",
 			"PlannedGoodsReceiptDate": "2024-01-25",
@@ -26,10 +37,11 @@
 			"HeaderGrossWeight": 3390,
 			"HeaderNetWeight": 3390,
 			"HeaderWeightUnit": "KG",
-			"Incoterms": "CIF"
+			"Incoterms": "EXW",
+			"IncotermsText": "工場渡し"
 		}
 	],
-	"DeliveryDocumentItem": [
+	"Item": [
 		{
 			"DeliveryDocument": 1,
 			"DeliveryDocumentItem": 1,
@@ -41,18 +53,21 @@
 			"DeliveryDocumentItemTextByBuyer": "SM570TMC-001",
 			"DeliveryDocumentItemTextBySeller": "SM570TMC-001",
 			"PlannedGoodsIssueQuantity": 1,
-			"PlannedGoodsIssueQtyInBaseUnit": 1036,
+			"PlannedGoodsIssueQtyInBaseUnit": 4,
 			"BaseUnit": "KG",
 			"DeliveryUnit": "員数",
 			"PlannedGoodsIssueDate": "2024-01-24",
 			"PlannedGoodsIssueTime": "22:00:00",
 			"PlannedGoodsReceiptDate": "2024-01-25",
 			"PlannedGoodsReceiptTime": "08:00:00",
-			"ItemGrossWeight": 1036,
-			"ItemNetWeight": 1036,
+			"ItemGrossWeight": 3,
+			"ItemNetWeight": 2,
 			"ItemWeightUnit": "KG",
+			"ProductNetWeight": 2,
 			"Project": 1,
-			"WBSElement": 1
+			"WBSElement": 1,
+			"OrderID": 1,
+			"OrderItem": 1
 		}
 	],
 	"api_schema": "DPFMFuncDeliveryInstructionPDFGenerates",

@@ -10,7 +10,7 @@
     "styles" : {
         "default" : {
             "fontFamily" : "default",
-            "fontSize" : 9,
+            "fontSize" : 8,
             "color" : "#000000",
             "underline" : false,
             "overflow" : "crop",
@@ -23,284 +23,276 @@
         },
         "cell" : {
             "style" : "default",
-            "horizontalAlignment" : "center",
             "verticalAlignment" : "center"
         },
-        "cell-small" : {
+        "cell-no" : {
             "style" : "cell",
-            "fontSize" : 6
+            "overflow" : "autoscale",
+            "horizontalAlignment" : "center"
         },
-        "remarks" : {
-            "style" : "default",
-            "horizontalAlignment" : "left",
+        "cell-center" : {
+            "style" : "cell",
+            "horizontalAlignment" : "center"
+        },
+        "cell-right" : {
+            "style" : "cell",
+            "horizontalAlignment" : "right"
+        },
+        "cell-note" : {
+            "style" : "cell",
             "verticalAlignment" : "top",
             "multiline" : true
-        },
-        "signature" : {
-            "style" : "default",
-            "fontFamily" : "signature",
-            "fontSize" : 24,
-            "horizontalAlignment" : "center"
         }
     },
     "fields" : [
         {
-              "dataSource" : "BuyerName",
+            "dataSource" : "DeliveryDocument",
             "style" : "default",
             "rect" : [
-                180, 100, 220, 12
+                43, 97, 65, 10
+            ]
+        },
+        {
+            "dataSource" : "PlannedGoodsIssueDate",
+            "style" : "default",
+            "rect" : [
+                123, 97, 65, 10
+            ]
+        },
+        {
+            "dataSource" : "DeliverFromPartyName",
+            "style" : "default",
+            "rect" : [
+                40, 138, 250, 10
             ]
         },
         {
             "dataSource" : "OrderID",
             "style" : "default",
             "rect" : [
-                180, 115, 220, 12
+                43, 117, 55, 10
             ]
         },
         {
-            "dataSource" : "DrawingNo",
+            "dataSource" : "WBSElement",
             "style" : "default",
             "rect" : [
-                180, 130, 220, 12
-            ]
-        },
-        {
-            "dataSource" : "PurchaseOrderNo",
-            "style" : "default",
-            "rect" : [
-                220, 160, 180, 12
+                140, 117, 65, 10
             ]
         },
         {
             "dataSource" : "ProductionOrder",
             "style" : "default",
             "rect" : [
-                220, 175, 180, 12
+                280, 117, 60, 10
             ]
         },
         {
-            "dataSource" : "MarkingOfMaterial",
+            "dataSource" : "DeliverToPlantName",
             "style" : "default",
             "rect" : [
-                220, 190, 180, 12
+                420, 117, 200, 10
             ]
         },
         {
-            "dataSource" : "Product",
+            "dataSource" : "BuyerName",
             "style" : "default",
             "rect" : [
-                220, 205, 180, 12
+                100, 170, 100, 8
             ]
         },
         {
-            "dataSource" : "SizeOrDimensionText",
+            "dataSource" : "ConsumerName",
             "style" : "default",
             "rect" : [
-                220, 220, 180, 12
+                75, 178, 130, 10
             ]
         },
         {
-            "dataSource" : "OrderQuantityInBaseUnit",
+            "dataSource" : "WBSElementDescription",
             "style" : "default",
             "rect" : [
-                220, 235, 180, 12
+                350, 138, 270, 10
             ]
         },
         {
-            "dataSource" : "InspectionLot",
-            "style" : "default",
+            "dataSource" : "Items",
             "rect" : [
-                630, 100, 160, 12
-            ]
-        },
-        {
-            "dataSource" : "InspectionLotDate",
-            "style" : "default",
-            "rect" : [
-                630, 115, 160, 12
-            ]
-        },
-        {
-            "dataSource" : "InspectionSpecification",
-            "style" : "default",
-            "rect" : [
-                640, 205, 150, 12
-            ]
-        },
-        {
-            "dataSource" : "ProductSpecification",
-            "style" : "default",
-            "rect" : [
-                640, 220, 150, 12
-            ]
-        },
-        {
-            "dataSource" : "InspectionPlantBusinessPartnerName",
-            "style" : "default",
-            "rect" : [
-                625, 235, 165, 12
-            ]
-        },
-        {
-            "dataSource" : "HeatNumber",
-            "style" : "default",
-            "rect" : [
-                60, 370, 75, 10
-            ]
-        },
-        {
-            "dataSource" : "SpecDetails",
-            "rect" : [
-                140, 278, 263, 105
-            ],
-            "record" : {
-                "direction" : "x",
-                "size" : [
-                    52.6, 105
-                ],
-                "fields" : [
-                    {
-                        "dataSource" : "SpecType",
-                        "style" : "cell-small",
-                        "rect" : [
-                            0, 0, 52.6, 15
-                        ]
-                    },
-                    {
-                        "dataSource" : "SpecTypeTextInJA",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 15, 52.6, 15
-                        ]
-                    },
-                    {
-                        "dataSource" : "SpecTypeUnit",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 30, 52.6, 15
-                        ]
-                    },
-                    {
-                        "dataSource" : "UpperLimitValue",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 45, 52.6, 15
-                        ]
-                    },
-                    {
-                        "dataSource" : "LowerLimitValue",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 60, 52.6, 15
-                        ]
-                    },
-                    {
-                        "dataSource" : "HeatNumber",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 75, 52.6, 30
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "dataSource" : "ComponentCompositions",
-            "rect" : [
-                403, 278, 385, 105
-            ],
-            "record" : {
-                "direction" : "x",
-                "size" : [
-                    35, 105
-                ],
-                "fields" : [
-                    {
-                        "dataSource" : "ComponentCompositionType",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 0, 35, 45
-                        ]
-                    },
-                    {
-                        "dataSource" : "ComponentCompositionUpperLimitInPercent",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 45, 35, 15
-                        ]
-                    },
-                    {
-                        "dataSource" : "ComponentCompositionLowerLimitInPercent",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 60, 35, 15
-                        ]
-                    },
-                    {
-                        "dataSource" : "HeatNumber",
-                        "style" : "cell",
-                        "rect" : [
-                            0, 75, 35, 30
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "dataSource" : "Inspections",
-            "rect" : [
-                53, 383, 490, 150
+                30, 180, 550, 238
             ],
             "record" : {
                 "direction" : "y",
                 "size" : [
-                    245, 30
+                    550, 23
                 ],
                 "fields" : [
                     {
-                        "dataSource" : "InspectionType",
-                        "style" : "cell-small",
+                        "dataSource" : "DeliveryDocumentItem",
+                        "style" : "cell-right",
                         "rect" : [
-                            0, 0, 122.5, 15
+                            3, 9, 16, 10
                         ]
                     },
                     {
-                        "dataSource" : "InspectionTypeTextInJA",
+                        "dataSource" : "Product",
                         "style" : "cell",
                         "rect" : [
-                            0, 15, 122.5, 15
+                            140, 3, 100, 10
                         ]
                     },
                     {
-                        "dataSource" : "InspectionTypeCertificateValueInText",
+                        "dataSource" : "ProductSpecification",
                         "style" : "cell",
                         "rect" : [
-                            122.5, 0, 122.5, 15
+                            140, 14, 100, 10
                         ]
                     },
                     {
-                        "dataSource" : "InspectionTypeCertificateValueInQuantity",
+                        "dataSource" : "SizeOrDimensionText",
                         "style" : "cell",
                         "rect" : [
-                            122.5, 15, 122.5, 15
+                            260, 9, 130, 10
+                        ]
+                    },
+                    {
+                        "dataSource" : "PlannedGoodsIssueQuantity",
+                        "style" : "cell-right",
+                        "rect" : [
+                            390, 9, 60, 10
+                        ]
+                    },
+                    {
+                        "dataSource" : "PlannedGoodsIssueQtyInBaseUnit",
+                        "style" : "cell-right",
+                        "rect" : [
+                            460, 9, 60, 10
+                        ]
+                    },
+                    {
+                        "dataSource" : "WBSElement",
+                        "style" : "cell-right",
+                        "rect" : [
+                            590, 9, 58, 10
+                        ]
+                    },
+                    {
+                        "dataSource" : "ItemGrossWeight",
+                        "style" : "cell-right",
+                        "rect" : [
+                            670, 9, 58, 10
                         ]
                     }
                 ]
             }
         },
+
         {
-            "dataSource" : "Remarks",
-            "style" : "remarks",
+            "dataSource" : "ShippingItemsEx",
             "rect" : [
-                545, 400, 240, 40
+                633, 220, 135, 238
+            ],
+            "record" : {
+                "direction" : "y",
+                "size" : [
+                    135, 21.63
+                ],
+                "fields" : [
+                    {
+                        "dataSource" : "WBSElement",
+                        "style" : "cell",
+                        "rect" : [
+                            0, 0, 38, 10
+                        ]
+                    },
+                    {
+                        "dataSource" : "ProductNetWeight",
+                        "style" : "cell-right",
+                        "rect" : [
+                            80, 11, 41, 10
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "dataSource" : "TotalPlannedGoodsIssueQuantity",
+            "style" : "cell-right",
+            "rect" : [
+                420, 442, 58, 10
             ]
         },
         {
-            "dataSource" : "ChiefOfInspectionSection",
-            "style" : "signature",
+            "dataSource" : "TotalPlannedGoodsIssueQtyInBaseUnit",
+            "style" : "cell-right",
             "rect" : [
-                550, 490, 230, 25
+                490, 442, 58, 10
+            ]
+        },
+
+        {
+            "dataSource" : "TransportationNote1",
+            "style" : "cell",
+            "rect" : [
+                75, 495, 170, 10
+            ]
+        },
+        {
+            "dataSource" : "TransportationNote2",
+            "style" : "cell",
+            "rect" : [
+                75, 506, 170, 10
+            ]
+        },
+        {
+            "dataSource" : "TransportationNote3",
+            "style" : "cell",
+            "rect" : [
+                75, 517, 170, 10
+            ]
+        },
+
+        {
+            "dataSource" : "Note1",
+            "style" : "cell",
+            "rect" : [
+                280, 495, 340, 10
+            ]
+        },
+        {
+            "dataSource" : "Note2",
+            "style" : "cell",
+            "rect" : [
+                280, 506, 340, 10
+            ]
+        },
+        {
+            "dataSource" : "Note3",
+            "style" : "cell",
+            "rect" : [
+                280, 517, 340, 10
+            ]
+        },
+
+        {
+            "dataSource" : "NoteEx1",
+            "style" : "cell",
+            "rect" : [
+                635, 495, 130, 10
+            ]
+        },
+        {
+            "dataSource" : "NoteEx2",
+            "style" : "cell",
+            "rect" : [
+                635, 506, 130, 10
+            ]
+        },
+        {
+            "dataSource" : "NoteEx3",
+            "style" : "cell",
+            "rect" : [
+                635, 517, 130, 10
             ]
         }
     ]
